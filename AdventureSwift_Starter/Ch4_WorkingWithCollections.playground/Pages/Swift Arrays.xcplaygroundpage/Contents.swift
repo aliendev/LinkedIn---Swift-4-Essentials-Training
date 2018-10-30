@@ -14,11 +14,30 @@
  + Iterate over **levelDifficulties** and print out its indexes and values
  */
 // Creating arrays
+var emptyArray: Array<String> = []
+var emptyArray2 = Array<String>()
+var emptyArray3 = Double()
+var emptyArray4: [Int] = []
+
+var levelDifficulties = ["Easy", "Moderate", "Veteran", "Nightmare"]
+
 
 // Count and isEmpty
+levelDifficulties.count
+levelDifficulties.isEmpty
+
+
 
 // Accessing array values
+var easyDifficulty = levelDifficulties[0]
 
+for difficulty in levelDifficulties {
+    print(difficulty)
+}
+
+for (index, difficulty) in levelDifficulties.enumerated() {
+    print("\(index) -> \(difficulty)")
+}
 /*:
  [Next Topic](@next)
  */

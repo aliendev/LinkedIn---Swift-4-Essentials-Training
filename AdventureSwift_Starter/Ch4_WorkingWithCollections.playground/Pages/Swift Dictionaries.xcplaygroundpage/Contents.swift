@@ -13,12 +13,34 @@
  + Iterate over **blacksmithShopItems** and print out its values and keys
  */
 // Creating dictionaries
+var emptyDictionary1: Dictionary<Int, Int> = [:]
+var emptyDictionary2 = Dictionary<Int, String>()
+var emptyDictionary3 = [String : String]()
+var emptyDictionary4: [String : String] = [:]
+
+var blacksmithShop = ["Bottle": 10, "Shield": 15, "Ocarina": 1000]
+
 
 // Count and isEmpty
+blacksmithShop.count
+blacksmithShop.isEmpty
+
 
 // All keys and values
+var allKeys = [String](blacksmithShop.keys)
+var allValues = [Int](blacksmithShop.values)
+
+
 
 // Accessing dict values
+let shieldPrice = blacksmithShop.index(forKey: "Shield")
+// blacksmithShop.index(forKey: "Sword")
+
+for (k, v) in blacksmithShop {
+    print(k, v)
+}
+
+
 
 /*:
  [Previous Topic](@previous)
